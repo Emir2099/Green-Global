@@ -173,6 +173,8 @@ html{
 .contact{
     background-color: #f6f5f4;
     height: 833px;
+    padding-top: 39px;
+    margin-top: 75px;
 }
 
 .text-center{
@@ -220,4 +222,14 @@ html{
     height: 4px;
     margin: 5px 3px;
 
+}
+
+.services{
+    margin: 31px 14px;
+    padding: 5px 3px;
+    width: 98%;
+    font-size: 19px;
+    /* border: 2px solid grey; */
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
 }

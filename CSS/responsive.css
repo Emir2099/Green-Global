@@ -3,7 +3,7 @@
         flex-direction: column;
     }
     .navbar{
-        height: 447px;
+        height: 500px;
         flex-direction: column;
         transition: all 0.7s ease-out;
     }
