@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Emission Control Calculator</title>
+  </head>
+  <body>
+    <section>
+    <h1>Emission Control Calculator</h1>
+    <form>
+      <label for="distance">Distance traveled (in miles):</label><br>
+      <input type="text" id="distance" name="distance"><br><br>
+      <label for="fuel-efficiency">Fuel efficiency (in miles per gallon):</label><br>
+      <input type="text" id="fuel-efficiency" name="fuel-efficiency"><br><br>
+      <label for="fuel-type">Fuel type:</label><br>
+      <select id="fuel-type" name="fuel-type">
+        <option value="gasoline">Gasoline</option>
+        <option value="diesel">Diesel</option>
+      </select><br><br>
+      <button type="button" onclick="calculateEmissions()">Calculate Emissions</button>
+    </form>
+    <p id="emissions-result"></p>
+    <script>
+      function calculateEmissions() {
+        var distance = parseFloat(document.querySelector("#distance").value);
+        var fuelEfficiency = parseFloat(document.querySelector("#fuel-efficiency").value);
+        var fuelType = document.querySelector("#fuel-type").value;
+        var emissions;
+        
+        if (fuelType === "gasoline") {
+          emissions = distance / fuelEfficiency * 19.64;
+        } else if (fuelType === "diesel") {
+          emissions = distance / fuelEfficiency * 22.38;
+        }
+        
+        document.querySelector("#emissions-result").innerHTML =
+          "Total emissions: " + emissions.toFixed(2) + " pounds of CO2.";
+      }
+    </script>
+    </section>
+<br>
+    <section>
+        <h1>Emission Calculator</h1>
+    <form>
+      <p>Appliance:</p>
+      <select id="appliance-select">
+        <option value="television">Television</option>
+        <option value="laptop">Laptop</option>
+        <option value="desktop-computer">Desktop computer</option>
+        <option value="smartphone">Smartphone</option>
+      </select>
+      <p>Hours used per day:</p>
+      <input type="text" id="hours-used" />
+      <br><br>
+      <button type="button" onclick="calculateEmission()">Calculate Emission</button>
+      <br><br>
+      <p id="emission-output"></p>
+      <script src="emission-calculator.js"></script>
+    </form>
+    </section>
+    </body>
+  </body>
+</html>

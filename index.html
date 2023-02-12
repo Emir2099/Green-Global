@@ -119,13 +119,27 @@
             </script>
             <div class="gcse-search"></div>
     </section>
-
+    
+    <script>
+        function searchLocation() {
+          var input = document.getElementById("searchInput").value;
+          var result = "Results for nearby location: " + input;
+          document.getElementById("result").innerHTML = result;
+        }
+    </script>
+    <section class="search">
+        <h1>Search Box</h1>
+        <input type="text" id="searchInput">
+        <button onclick="searchLocation()">Search</button>
+        <p id="result"></p>
+    </section>
 
     <footer class="background">
         <p class="text-footer">
             Copyright &copy; 2023 CodeEnvironment - All rights reserved
         </p>
     </footer>
+
     <script src="JS/resp.js"></script>
 </body>
 </html>
