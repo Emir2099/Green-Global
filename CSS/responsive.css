@@ -41,4 +41,10 @@
     .paras{
         padding: 0px;
     }
+
+    .team{
+        width: 100%;
+        height: auto;
+        padding: 90px 2%;
+    }
 }

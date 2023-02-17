@@ -200,6 +200,7 @@ html{
 }
 
 .text-footer{
+    position: sticky;
     text-align: center;
     padding: 30px 0px;
     font-family: 'Times New Roman', Times, serif;
@@ -207,6 +208,16 @@ html{
     justify-content: center;
     color: white;
 }
+
+.calc-footer{
+    text-align: center;
+    padding: 30px 0px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
 
 .burger{
     display: none;
@@ -232,4 +243,125 @@ html{
     /* border: 2px solid grey; */
     border-radius: 6px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+
+.hcalc{
+        background-color: #f6f5f4;
+        height: 833px;
+        padding-top: 39px;
+    
+}
+
+.vhcalc{
+        background-color: #f6f5f4;
+        height: 833px;
+        padding-top: 39px;
+    
+}
+
+.vhcontent{
+    max-width: 10%;
+    margin: 50px auto;
+}
+
+.vhcalinput{
+    margin: 14px 0px;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hcontent{
+    max-width: 10%;
+    margin: 50px auto;
+}
+
+.hcalinput{
+    margin: 14px 0px;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.team{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background: radial-gradient(#f6f5f4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding-top: 39px;
+    margin-top: 75px; */
+    
+}
+
+.team-content{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.team-content img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.center h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 41px;
+    text-align: center;
+}
+
+.drum{
+    padding: 16px;
+    border-radius: 15px;
+    transition: all .38s ease;
+}
+
+.drum h3{
+    font-size: 23px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.drum h5{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.icons i{
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 8px;
+    transition: all .38s ease;
+}
+
+.icons i:hover{
+    transform: scale(1.2);
+}
+
+.drum:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>CodeEnvironment - Sustainaible Advancements</title>
 </head>
 <body>
@@ -13,10 +14,11 @@
         <ul class="nav-list v-class-resp">
             <div class="logo"><img src="IMAGES/logo.png" alt="logo"></div>
             <li><a href="#home"> Home</a></li>
+            <li><a href="calc.html"> Emission Calculator</a></li>
             <li><a href="#aims"> Aims</a></li>
             <li><a href="#contact"> Contact Us</a></li>
             <li><a href="#team"> Team</a></li>
-            <li><a href="#services"> Services</a></li>
+            <!-- <li><a href="#services"> Services</a></li> -->
         </ul>
         <div class="rightNav v-class-resp">
             <input type="text" name = "search" id = "search">
@@ -99,7 +101,7 @@
     </section>
 
 
-
+    
     <section class="contact" id = "contact">
         <h1 class = "text-center">Contact Us</h1>
         <div class = "form">
@@ -111,8 +113,61 @@
         </div>
     </section>
 
+    <section class="team" id="team">
+        <div class="center">
+            <h1 style="font-family:Arial, Helvetica, sans-serif;">Our Team</h1>
+        </div>
 
-    <section class="services" id = "services">
+        <div class="team-content">
+            <div class="drum">
+                <img src="IMAGES/image4.jpg" alt="1">
+                <h3>Emir Husain</h3>
+                <h5>Core Developer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+        
+            <div class="drum">
+                <img src="IMAGES/img03.jpg"alt = "1">
+                <h3>Saptarshi Acharya</h3>
+                <h5>Designer</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+        
+
+            <div class="drum">
+                <img src="IMAGES/image20.jpg" alt="1">
+                <h3>Om Aditya</h3>
+                <h5>Data Collection</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+
+            <div class="drum">
+                <img src="IMAGES/img1.jpg" alt="1">
+                <h3>Dev Patel</h3>
+                <h5>Data Collection</h5>
+                <div class="icons">
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <section class="services" id = "services">
         <h1 class = "text-center">Find Out Location</h1>
         <p style="font-family: 'Times New Roman', Times, serif; font-size: 20px; text-align: center; padding-bottom: 15px;">Search for the nearest recycle shop around your area</p>
             <script async src="https://cse.google.com/cse.js?cx=2168b4328aad940be">
@@ -132,10 +187,10 @@
         <input type="text" id="searchInput">
         <button onclick="searchLocation()">Search</button>
         <p id="result"></p>
-    </section>
+    </section> -->
 
     <footer class="background">
-        <p class="text-footer">
+        <p class="calc-footer">
             Copyright &copy; 2023 CodeEnvironment - All rights reserved
         </p>
     </footer>

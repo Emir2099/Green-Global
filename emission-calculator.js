@@ -10,6 +10,7 @@ const applianceWattage = {
     const selectedAppliance = applianceSelect.options[applianceSelect.selectedIndex].value;
     const hoursUsed = document.getElementById("hours-used").value;
     const emission = hoursUsed * applianceWattage[selectedAppliance];
-    document.getElementById("emission-output").innerHTML = `Your daily emission is approximately ${emission} kg of CO2`;
+    document.getElementById("emission-output").innerHTML = 
+    `Total emissions: ${emission} kg of CO2`;
   }
   
