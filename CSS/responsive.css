@@ -7,6 +7,12 @@
         flex-direction: column;
         transition: all 0.7s ease-out;
     }
+
+    .nav-list li{
+        list-style: none;
+        padding: 16px 15px;
+    }
+    
     .box-main{
         flex-direction: column-reverse;
         max-width: 100%;
