@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+	<title>Green Global - Event Calender</title>
+    <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo"><img src="IMAGES/logo.png" alt="logo"></div>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="index.html#aims"> Aims</a></li>
+            <li><a href="index.html#contact"> Contact Us</a></li>
+            <li><a href="index.html#team"> Team</a></li>
+            <li><a href="calc.html"> Emission Calculator</a></li>
+            <li><a href="calender.html"> Event Calender</a></li>
+            <li><a href="blog.html"> Blog</a></li>
+            <!-- <li><a href="#services"> Services</a></li> -->
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name = "search" id = "search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+	<script>
+		function changeContent() {
+			var selectedOption = document.getElementById("dropdown").value;
+			if (selectedOption == "option1") {
+				document.getElementById("content").innerHTML = 
+                `<strong>Veganuary – 1st to 31st January 2023:</strong> <br> 
+A worldwide movement called Veganuary aims to inspire individuals to try eating[being] vegan for the entire month of January and beyond. Over 620,000 people make the commitment to try eating entirely plant-based foods each year.
+The mission of Veganuary, is to "inspire and assist people to try veganism, push corporate change, and establish a global mass movement promoting ethical food choices with the purpose of eliminating animal husbandry, conserving the environment, and enhancing human health." <br> <br>
+
+<strong> RSPB Big Schools Bird Watch- 6th January to 20th February 2023: </strong> <br>
+While attending school, students can participate in the RSPB Big Schools' Bird Watch, a bird survey. Teachers need not worry—no avian species knowledge is required! Over the course of an hour, count the number of birds on the grounds of your school as part of this straightforward bird watch.
+When you sign up, the RSPB will also send you a free information pack with useful ID tools and survey forms. <br><br>
+<strong> RSPB Big Garden Bird Watch – 27th to 29th January 2023: </strong> <br>
+You may join the 700,000 participants that participate each year by just taking an hour to sit back, unwind, and observe the birds in your yard or neighbourhood park. After that, report what you saw to the RSPB. Please contact the RSPB even if you just observe a few birds or none at all since such information is really helpful to them.
+
+The UK Garden bird population may be seen in the birdwatcher's snapshot of time. The RSPB can compare the outcomes with earlier years because it is held at around the same time each year. <br><br>
+<strong> Big Energy Saving Week – 17th to 23rd January 2023: </strong> <br>
+Organised by the Energy Saving Trust and Citizens Advice Bureau, Big Energy Saving Week is a national initiative to raise awareness of the benefits of saving energy in the home, to help cut energy costs, and protect the planet by cutting fossil fuel usage.
+As well as[Along with] raising awareness, the event also provides support for households to become more energy efficient by showing what financial support and discounts might be available to householders, as well as practical ways to invest in more effective insulation. 
+`;
+			} else if (selectedOption == "option2") {
+				document.getElementById("content").innerHTML = 
+                `<strong> Show The Love – 1st to 28th February 2023: </strong> <br>
+An annual celebration of everything we cherish and wish to save from the worst effects of climate change is called "Show the Love." Since 2015, organisations, institutions, well-known brands, and millions of individuals have joined forces to push politicians to set aside their differences and address the climate problem using the power of their collective green hearts.
+
+The Climate Coalition is in charge of this anti-climate change effort. This is the biggest coalition fighting climate change in the UK. Together, via Show the Love, we can effectively tell individuals in positions of authority that we want to ensure a greener, safer future for future generations. <br> <br>
+<strong> World Wetlands Day – 2nd February 2023: </strong> <br>
+Every year on February 2nd, World Wetlands Day is observed to promote awareness of wetlands. Particularly, the vital importance of these threatened ecosystems' contributions to biodiversity, climatic adaptability and mitigation, freshwater supply, global economies, and other factors.
+
+Since the 1700s, wetlands all over the world have deteriorated by around 90%. In addition, wetlands are disappearing three times quicker than forests. As a result, this awareness day aims to increase wetlands' visibility on a national and international scale, slow down their rapid destruction, and promote conservation and restoration efforts. <br> <br>
+
+
+
+
+<strong> Fair Trade Fortnight – 21st February to 6th March 2023: </strong> <br>
+Fair Trade The week-long fair trade celebration honours the farmers and agricultural labourers who produce the world's food.
+
+Every year, at the end of February and the beginning of March, hundreds of people from all over the UK come together to share their tales about the people who grow our food and beverages, mine our gold, and cultivate the cotton that becomes our clothing.
+
+As a result, more people become aware of the frequently exploited and underpaid workers in our supply chains and the value of adopting Fair Trade. <br><br>
+<strong>International Polar Bear Day – 27th February 2023: </strong> <br>
+International Polar Bear Day, run by Polar Bear International, is an annual event celebrated every 27th of February to raise awareness about the conservation status of the polar bear. This environmental awareness day coincides with the time when polar bear mothers and cubs are snug in their dens.
+Keeping mothers and cubs safe, while also addressing climate warming, is a critical part of Polar Bear International’s work on behalf of polar bears.
+As part of the day’s celebrations, Polar Bear International focuses on the need to protect denning polar bear families across the Arctic. Take part in live events, learn about polar bears, and donate to help the plight of the polar bear.<br>
+`;
+			} else if (selectedOption == "option3") {
+				document.getElementById("content").innerHTML = 
+                "This is option 3 content.";
+			}
+		}
+	</script>
+</head>
+<body>
+    <div class="calenderwhole">
+    <div class="calenderhead">
+	<h1>Event Calender</h1>
+    </div>
+    <div class="calendermain">
+    <div class="calenderchoose">
+	<label for="dropdown">View events of:</label>
+    <div class="calenderevent">
+	<select id="dropdown" onchange="changeContent()">
+    </div>
+    </div>
+		<option value="option0">select</option>
+		<option value="option1">January 2023</option>
+		<option value="option2">February 2023</option>
+		<option value="option3">March 2023</option>
+		<option value="option3">April 2023</option>
+		<option value="option3">May 2023</option>
+		<option value="option3">June 2023</option>
+		<option value="option3">July 2023</option>
+		<option value="option3">August 2023</option>
+		<option value="option3">September 2023</option>
+		<option value="option3">October 2023</option>
+		<option value="option3">November 2023</option>
+		<option value="option3">December 2023</option>
+	</select>
+	<div id="content">Select an option to change the content of this section.</div>
+    </div>
+    </div>
+</div>
+
+
+    <script src="JS/resp.js"></script>
+</body>
+</html>

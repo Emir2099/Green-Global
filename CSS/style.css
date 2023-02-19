@@ -404,3 +404,43 @@ html{
       object-fit: cover;
     }
   }
+
+  .blog-template{
+    background-color: #f6f5f4;
+  }
+
+  .headblog{
+    padding-left: 50%;
+    padding-top: 2%;
+  }
+
+  .calenderwhole{
+    background-color: #f6f5f4;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 570px;
+  }
+
+  .calenderhead{
+    padding-top: 2%;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  .calenderchoose{
+    text-align: center;
+    padding-top: 2%;
+    font-size: 25px;
+  }
+
+  .calenderevent{
+    padding-top: 1%;
+  }
+
+  .calenderoption{
+    padding-bottom: 2px;
+  }
+
+  #dropdown{
+    margin-bottom: 22px;
+  }
