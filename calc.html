@@ -45,7 +45,7 @@
       </select><br><br>
       <button style="font-size :17px; padding-left: 17px; padding-right: 17px; cursor: pointer;"type="button" onclick="calculateEmissions()">Calculate Emissions</button>
     </form>
-    <p style="font-size: 32px;padding-left: 38%;"id="emissions-result"></p>
+    <p style="font-size: 32px;text-align: center;"id="emissions-result"></p>
     <script>
       function calculateEmissions() {
         var distance = parseFloat(document.querySelector("#distance").value);
@@ -60,9 +60,10 @@
         }
         
         document.querySelector("#emissions-result").innerHTML =
-          "Total emissions: " + emissions.toFixed(2) + " pounds of CO2.";
+          "Total emissions: " + emissions.toFixed(2) + " pounds of CO2";
       }
     </script>
+    <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; padding-top: 70px; text-align: center;">*Provides a rough approximation regarding the emission of CO2</p>
     </div>
     </section>
 <br>
@@ -84,9 +85,10 @@
       <button style="font-size :17px; padding-left: 25px; padding-right: 27px; cursor: pointer;" type="button" onclick="calculateEmission()">Calculate Emission</button>
       <br><br>
     </form>
-      <p style="font-size: 32px;padding-left: 40%;"id="emission-output"></p>
+      <p style="font-size: 32px;text-align: center;"id="emission-output"></p>
       <script src="emission-calculator.js"></script>
-  </div>
+      <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; padding-top: 70px; text-align: center;">*Provides a rough approximation regarding the emission of CO2 <br> There are some constant approximate values taken of the appliance to calculate the emission value</p>
+    </div>
     </section>
     
     <footer class="background">
